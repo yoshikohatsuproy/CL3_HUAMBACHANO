@@ -1,0 +1,23 @@
+create database prueba_soap;
+use prueba_soap;
+
+create table user(
+	id int auto_increment primary key not null,
+    correo varchar(100) not null unique,
+	pass   varchar(100) not null
+);
+
+insert into user(correo, pass) values('yokun_123@hotmail.com','1234');
+insert into user(correo, pass) values('yokun12342@gmail.com','1234');
+SELECT * FROM USER; 
+select * from user where correo = 'yokun_123@hotmail.com'  and pass = '1234';
+
+create table EMPLEADO(
+	id int auto_increment primary key not null,
+    nombre varchar(100) not null,
+	apellido   varchar(100) not null
+);
+
+insert into EMPLEADO(nombre, apellido) values('JONATHAN','HUAMBACHANO');
+insert into EMPLEADO(nombre, apellido) values('KARINA','MUÑOZ');
+SELECT * FROM EMPLEADO; 
